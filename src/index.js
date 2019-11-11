@@ -1,11 +1,10 @@
 import './styles.scss';
 import 'bootstrap-4-grid'
 //change eVa before production
-import * as eva from 'eva-icons';
 import app from './scripts/app';
 import anime from 'animejs'
 import jump from 'jump.js'
-eva.replace()
+
 
  anime({
      targets : 'header',
@@ -38,4 +37,8 @@ heroBtn.addEventListener('click', ()=>{
 const infoBtn = document.querySelector(".info-button")
 infoBtn.addEventListener('click',()=>{
     jump('.services')
+})
+const contactBtn = document.querySelector(".contact-button")
+contactBtn.addEventListener('click',()=>{
+    jump('.contact')
 })

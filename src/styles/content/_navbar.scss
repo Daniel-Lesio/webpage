@@ -22,6 +22,11 @@ header {
     display: flex; 
     justify-content: center;
     align-items: center;
+    //background: red;
+    svg{
+      height: 20px;
+    }
+    
 }
  .sideNavBtn{
     overflow: hidden;
@@ -32,7 +37,7 @@ header {
     justify-content: center;
     align-items: center;
     svg{
-        
+        width: 34px;
         bottom: 15px;
         left: 15px;
         position: absolute;    
@@ -42,4 +47,11 @@ header {
         bottom: -100px;
     }
     
+}
+.brand{
+display: flex;
+    .brand-logo{
+        margin-right: 10px;
+        transform: translateY(-3px);
+    }
 }

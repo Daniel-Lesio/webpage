@@ -8,19 +8,33 @@
 @import './styles/ui/button';
 @import './styles/ui/psi';
 @import './styles/ui/siedenav';
+@import './styles/ui/scrollup';
 @import './styles/ui/form';
 @import './styles/ui/modal';
+@import './styles/socials';
+@import './styles/content/gallery';
+@import './styles/content/services';
 
 
 
 img  {max-width: 100%}
-svg{
-    max-width: 80%;
-}
+
 .test{
-    background: $silver;
+    background: linear-gradient($metal, $silver);
     color: $second;
 }
 .gallery-img{
     
+}
+.text-accent{
+    color: $accent;
+}
+.text-white{
+    color: white;
+}
+.text-second{
+    color: $second!important;
+}
+.text-gray{
+    color: $gray;
 }

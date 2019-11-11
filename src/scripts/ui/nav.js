@@ -10,12 +10,11 @@ const nav = () => {
     menuBtn.addEventListener('click',()=>{
         menuIn ? closeMenu() : openMenu()
         menuIn = !menuIn;
-        console.log(menuIn)
+        
     });  
     overlay.addEventListener('click',()=>{
         menuIn ? closeMenu() : openMenu()
-        menuIn = !menuIn;
-        console.log(menuIn)
+        menuIn = !menuIn;    
     })
     const closeMenu =()=>{
         anime({

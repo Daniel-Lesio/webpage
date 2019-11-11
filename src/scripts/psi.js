@@ -1,5 +1,5 @@
-import effects from "./effects/effects";
 
+import anime from 'animejs'
 const psi = () => {
     
     const container = document.querySelector('body');
@@ -13,12 +13,18 @@ const psi = () => {
     let scrolledNavbarAnimation = (isScrolled) =>{
         let navbar = document.querySelector('header');
         if(isScrolled){
-            navbar.classList.add('scrolled')
+            anime({
+                targets : '.scrollup',
+                translateX : '-110px'
+            })
             
         }
         else{
             navbar.classList.remove('scrolled')
-            
+            anime({
+                targets : '.scrollup',
+                translateX : '110px'
+            })
         }
     }
         const progressBar = document.querySelector(".progress-bar");

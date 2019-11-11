@@ -6,6 +6,7 @@ import imgLazyLoad from './ui/imgLazyLoad';
 import scrollup from './scrollup';
 import io from './ui/io';
 import gallery from './effects/gallery';
+import services from './ui/services';
 
 const app = () => {
     psi();
@@ -14,6 +15,7 @@ const app = () => {
     scrollup();
     io();
     gallery();
+    services();
 }
 
 export default app;

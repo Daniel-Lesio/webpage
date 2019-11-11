@@ -1,0 +1,15 @@
+.scrollup{
+    z-index: 42;
+    position: fixed!important;
+    right: -100px;
+    bottom: 20px;
+    width: 70px;
+    height: 70px;
+    background: $silver;
+    border-radius: 50%;
+    border: dotted 2px $accent;
+    cursor: pointer;
+        svg{
+            width: 30px;
+        }
+}

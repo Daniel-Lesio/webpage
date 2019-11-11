@@ -28,13 +28,13 @@ export default function io (){
                 })
              }
             });
-        }, {rootMargin: "0px 0px -200px 0px"});
+        }, {rootMargin: "0px 0px 0px 0px"});
         targets.forEach(img => { observer.observe(img) });
     }
     else {
-                entry.target.src = entry.target.getAttribute('data-lazy');
-                entry.target.classList.remove('blured')
-                observer.unobserve(entry.target);
+     targets.forEach(target=>{
+        target.innerHTML = target.getAttribute('value')
+     })
     }
 
 };

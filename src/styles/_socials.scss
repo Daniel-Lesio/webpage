@@ -1,0 +1,11 @@
+.socials{
+    transform: translateY(-10px);
+    margin-bottom: 10px;
+    svg{
+        height: 30px;
+        fill : $metal;
+        &:hover{
+            fill : $accent
+        }
+    }
+}

@@ -1,5 +1,6 @@
 import anime from 'animejs'
 const gallery = () => {
+    const galleryOverlays = document.querySelectorAll('.gallery-overlay')
    const imgs = document.querySelectorAll('.gallery-img')
    const modal = document.querySelector('.modal')
    imgs.forEach(img=>{
