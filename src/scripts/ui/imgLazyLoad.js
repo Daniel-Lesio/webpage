@@ -1,26 +1,24 @@
 export default function imgLazyLoad (){
-    let sections = document.querySelectorAll('img');
-    console.log(sections)
-        if(!!window.IntersectionObserver){
-            const observer = new IntersectionObserver((entries)=>{
-                entries.forEach(entry=>{
-                    if(entry.intersectionRatio>0){
-                        let img = entry.target;
-                        let src = img.getAttribute('data-lazy');
-                        img.setAttribute('src', src);
-                        img.classList.add('fade');
-                        observer.disconnect();
-                    }
-                   
-                });
-            });
-            sections.forEach(section=>{
-                
-                observer.observe(section);
-            });
-        }
-         else {
-             
-         };
-    };
+    let targets = document.querySelectorAll('.img');
+    
+    if(!!window.IntersectionObserver){
+        let observer = new IntersectionObserver((entries, observer) => { 
+            entries.forEach(entry => {
+            if(entry.isIntersecting){
+            
+                entry.target.src = entry.target.getAttribute('data-lazy');
+                entry.target.classList.remove('blured')
+                observer.unobserve(entry.target);
 
+             }
+            });
+        }, {rootMargin: "0px 0px -200px 0px"});
+        targets.forEach(img => { observer.observe(img) });
+    }
+    else {
+                entry.target.src = entry.target.getAttribute('data-lazy');
+                entry.target.classList.remove('blured')
+                observer.unobserve(entry.target);
+    }
+
+};

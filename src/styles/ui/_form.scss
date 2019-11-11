@@ -1,16 +1,13 @@
 form{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 100px;
-    border-radius: 5px;
     
-    input{
-        font-size: 24px;
-        padding-left:10px;
+    .input{
         background: white;
-        line-height: 40px;
+        line-height: 30x;
         border-radius: 4px;
-        margin-top: 20px;
+        &:focus{
+            outline: $metal;
+        }
+        
     }
     textarea{
         padding: 10px;
@@ -19,9 +16,14 @@ form{
         border-radius: 4px;
     }
     .submit{
-    
+        cursor: pointer;
     }
 }
 .gmap_canvas{
-    padding-top: 20px;
+
+
+}
+
+.cp{
+    cursor: pointer;
 }

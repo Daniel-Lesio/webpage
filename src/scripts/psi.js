@@ -2,7 +2,7 @@ import effects from "./effects/effects";
 
 const psi = () => {
     
-    const container = document.querySelector('#app');
+    const container = document.querySelector('body');
     container.innerHTML +=
         `
         <div class="psi">

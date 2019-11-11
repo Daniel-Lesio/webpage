@@ -1,20 +1,19 @@
-import anime from 'animejs';
 import nav from './ui/nav';
 import psi from './psi';
-import io from './ui/io';
+
+//import playground from '../scripts/playground'
 import imgLazyLoad from './ui/imgLazyLoad';
-import jumps from './ui/jumps';
-import scrollTo from './effects/scrollTo';
-import carousel from './effects/carousel' 
+import scrollup from './scrollup';
+import io from './ui/io';
+import gallery from './effects/gallery';
 
 const app = () => {
-psi();
-nav();
-io();
-imgLazyLoad();
-scrollTo();
-carousel();
+    psi();
+    nav();
+    imgLazyLoad();
+    scrollup();
+    io();
+    gallery();
 }
 
- 
 export default app;

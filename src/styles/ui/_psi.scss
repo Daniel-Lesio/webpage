@@ -4,8 +4,7 @@
     left: 0;
     height: 4px;
     width: 100vw;
-    background: #f7f7f7;
-    z-index: 99;
+    z-index: 991111;
     overflow: hidden;
     .progress-bar{
         border-radius: 50px;
@@ -15,7 +14,7 @@
         height: 100%;
         width: 0%;
         background: $accent;  /* fallback for old browsers */
-        background: linear-gradient(to right, $accent,$metal); 
+        background: #0A7758; 
     }
 }
 

@@ -1,7 +1,11 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const purgecss = require("@fullhuman/postcss-purgecss");
+
+require("babel-polyfill")
 
 module.exports ={
+  entry: [ 'babel-polyfill' ,'./src/index.js' ],
     module : {
         rules: [
             {
@@ -24,7 +28,20 @@ module.exports ={
                         loader: "css-loader",
                       },
                       {
-                        loader: "postcss-loader"
+                        loader: "postcss-loader",
+                        options : {
+                          ident :'postcss',
+                          plugins:[
+                            require('autoprefixer'),
+                          //   require('cssnano'),
+                          //   purgecss({
+                          //     content: [
+                          //         "./src/*.html", 
+                          //     ]
+                          // }),
+                          
+                          ]
+                        }
                       },
                       {
                         loader: "sass-loader",

@@ -1,10 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+@import './styles/fundament';
 @import './styles/variables';
 @import './styles/global';
-
-@import './styles/ui/navbar';
-@import './styles/ui/form';
+@import './styles/content/navbar';
+@import './styles/content/hero';
+@import './styles/content/contact';
+@import './styles/ui/button';
 @import './styles/ui/psi';
 @import './styles/ui/siedenav';
-@import './styles/content/hero';
+@import './styles/ui/form';
+@import './styles/ui/modal';
 
 
+
+img  {max-width: 100%}
+svg{
+    max-width: 80%;
+}
+.test{
+    background: $silver;
+    color: $second;
+}
+.gallery-img{
+    
+}

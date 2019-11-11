@@ -1,0 +1,14 @@
+.modal{
+    z-index: 9999999;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(#1c1c1c,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -100vw;
+    img{
+        width: 800px;
+    }
+}
