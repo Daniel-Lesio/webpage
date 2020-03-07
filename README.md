@@ -6,7 +6,8 @@
 **Clone repository :** 
 git clone https://github.com/Daniel-Lesio/webpage.git your-app-name
 
-**instal dependencies**
+**instal dependencies :**
+
 npm install
 
 **start working**
@@ -18,7 +19,8 @@ npm run start
 **run dev mode :** 
 
 npm run dev
-**build form production**
+
+**build form production :**
 
 npm run build 
 
