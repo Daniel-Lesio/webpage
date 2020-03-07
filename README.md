@@ -15,11 +15,15 @@ npm install
 
 npm run start
 
+and open your browser at http: // localhost: 8080
+
 **commands**
 
 **run dev mode :** 
 
 npm run dev
+
+Open your browser : 
 
 **build form production :**
 
