@@ -10,12 +10,16 @@ git clone https://github.com/Daniel-Lesio/webpage.git your-app-name
 npm install
 
 **start working**
+
 npm run start
 
 **commands**
+
 **run dev mode :** 
+
 npm run dev
 **build form production**
+
 npm run build 
 
 
